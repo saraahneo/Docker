@@ -1,0 +1,17 @@
+https://towardsdatascience.com/apache-airflow-and-postgresql-with-docker-and-docker-compose-5651766dfa96
+
+
+/Users/saramacal/.docker/airflow/
+
+
+pwd
+ls
+cd ./docker/docker-airflow-master/
+docker-compose -f ./docker-compose-LocalExecutor.yml up -d
+
+
+Error invoking remote method 'docker-start-container':
+Error: (HTTP code 400) unexpected - OCI runtime create
+failed: container_linux.go:380: starting container
+process caused: process_linux.go:545: container init
+ caused: rootfs_linux.go:76: mounting "/host_mnt/Users/saramacal/docker/docker-airflow-master/sql_files" to rootfs at "/usr/local/airflow/sql_files" caused: mount through procfd: not a directory: unknown: Are you trying to mount a directory onto a file (or vice-versa)? Check if the specified host path exists and is the expected type
